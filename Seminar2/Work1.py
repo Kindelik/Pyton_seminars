@@ -2,4 +2,5 @@ number = int(input("Введите число, факториал которог
 factorial = 1
 for i in range(1, number + 1):
     factorial = factorial * i
-print(factorial)
+print("Input: ", number)
+print("Outpur: ", factorial)
