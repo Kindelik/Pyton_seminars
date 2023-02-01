@@ -9,4 +9,3 @@ while num > numPower:
     arrayTwoPower.append(i)
     i += 1
     numPower = 2 ** i
-print(arrayTwoPower)
