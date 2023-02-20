@@ -1,10 +1,2 @@
-list_data = input().split()
-int_lst = []
-for element in list_data:
-    if element.isdigit():
-        int_lst.append(int(element))
-    else:
-        print(f'{element} - не является числом! ')
-        print('Ошибка формирования списка чисел!')
-        exit()
-print(f'Ваш список чисел:', int_lst)
+print([i * j for i in range(1, num_rows + 1) for j in range(1, num_columns + 1) if i == num_rows])
+

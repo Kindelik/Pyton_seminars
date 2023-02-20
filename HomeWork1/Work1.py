@@ -3,10 +3,11 @@
 # 100 -> 1 (1 + 0 + 0)
 
 number = int(input("Enter a three-digit number - "))
-sumDigits = None
 if 99 < number < 1000:
-    arrayNumber = list(map(int, str(number)))
-    sumDigits = arrayNumber[0] + arrayNumber[1] + arrayNumber[2]
+    arrayNumber = map(int, str(number))
+    print(type(arrayNumber))
+    # sumDigits = arrayNumber[0] + arrayNumber[1] + arrayNumber[2]
+    sumDigits = sum(arrayNumber)
     print(sumDigits)
 else:
     print("This number is incorrect")
